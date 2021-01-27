@@ -47,6 +47,7 @@ DEBIAN_PACKAGES="\
   libblkid1
   libbluetooth3
   libbluetooth-dev
+  liblz4-dev
   liblz4-1
   liblzma5
   libbrlapi0.6
@@ -190,6 +191,8 @@ DEBIAN_PACKAGES="\
   libpulse0
   libpulse-dev
   libpulse-mainloop-glib0
+  libsasl2-dev
+  libsasl2-2
   libsecret-1-0
   libsecret-common
   libselinux1
