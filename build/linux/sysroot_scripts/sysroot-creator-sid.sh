@@ -192,6 +192,7 @@ DEBIAN_PACKAGES="\
   libkrb5support0
   liblcms2-2
   libltdl7
+  liblz4-dev
   liblz4-1
   liblzma5
   liblzo2-2
@@ -248,6 +249,8 @@ DEBIAN_PACKAGES="\
   libre2-5
   libre2-dev
   librest-0.7-0
+  libsasl2-dev
+  libsasl2-2
   libselinux1-dev
   libselinux1
   libsepol1-dev
