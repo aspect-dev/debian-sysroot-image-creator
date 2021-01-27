@@ -161,7 +161,7 @@ SanityCheck() {
 
   # This is where the staging sysroot is.
   INSTALL_ROOT="${BUILD_DIR}/${DIST}_${ARCH_LOWER}_staging"
-  TARBALL="${BUILD_DIR}/${DISTRO}_${DIST}_${ARCH_LOWER}_sysroot.tgz"
+  TARBALL="${BUILD_DIR}/${DISTRO}_${DIST}_${ARCH_LOWER}_sysroot.tar.xz"
 
   if ! mkdir -p "${INSTALL_ROOT}" ; then
     echo "ERROR: ${INSTALL_ROOT} can't be created."
@@ -184,7 +184,7 @@ ClearInstallDir() {
 
 CreateTarBall() {
   Banner "Creating tarball ${TARBALL}"
-  tar zcf ${TARBALL} -C ${INSTALL_ROOT} .
+  tar -I "xz -9 -T0" -cf ${TARBALL} -C ${INSTALL_ROOT} .
 }
 
 ExtractPackageGz() {
